@@ -43,6 +43,9 @@
 ## Build tool directories for auxiliary files
 # latexrun
 latex.out/
+# VS Code LaTeX Workshop build directory
+build/
+.vscode
 
 ## Auxiliary and intermediate files from other packages:
 # algorithms
