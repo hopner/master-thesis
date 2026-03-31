@@ -6,9 +6,12 @@
 - Background and motivation for the project.
 - LLMs as AI
 
-## Active Learning
-- Overview of active learning
-- Benefits of active learning in the context of LLMs
+## Taxonomy of Misconceptions about LLMs
+- Present them all
+
+## Interactive Learning
+- Overview of interactive learning
+- Benefits of interactive learning in the context of LLMs
 - Project design and implementation - INF319
 
 ### Methodology
@@ -25,13 +28,14 @@
 
 ## Taxonomy
 
+
 ### Dimension 1: Foundational Conceptual Accuracy
 | Label | Code | Definition | Examples |
 | --- | --- | --- | --- |
 | Anthropomorphism | ANTHRO | Attributing human mental states, intentions or understanding to a LLM | "Thinking" <br> "Understanding" <br> "Intending" |
 | Deterministic Automation  | DETAUTOM | Confusing LLMs with deterministic automation systems | "Algorithm" |
 | Accuracy Overestimation | OVERACC | Overestimating the reliability and correctness of LLM outputs | "Correct output" <br> "Reliable" <br> "Trustworthy" |
-| Autonomy Overestimation | OVERAUTO | Belief that the LLM operate independently or possess agency | Need to be added |
+| Autonomy Overestimation | OVERAUTO | Belief that the LLM operate independently or possess agency | "Acted" or similar |
 
 
 ### Dimension 2: Mechanistic Understanding
@@ -40,14 +44,14 @@
 | Real-time Data Belief | REALTIME | Belief that the LLM retrieves current information | "Search the internet" <br> "Check online" |
 | Hallucination Blindness | HALLBLIND | Failure to recognize that LLMs can produce false or fabricated information | Need to be added |
 | Context Window Neglect | CONTEXNEG | Failure to recognize limits of LLMs' context window | "Keeps track of previous conversation" <br> "Remembers" |
-| Tokenization Neglect | TOKENNEG | Lack of awareness that LLMs process language as tokens rather than semantic units | Expectation of word-level understanding |
+| Tokenization Neglect | TOKENNEG | Lack of awareness that LLMs process language as tokens rather than semantic units | Expectation of word-level understanding and semantic connection towards real life objects |
 | Source Attribution Error | SOURCEATTR | Belief that LLM output originate from specific identifiable sources | "Citing sources" <br> "Finds data from" |
 
 ### Dimension 3: Ethical and Academic Integrity
 | Label | Code | Definition | Examples |
 | --- | --- | --- | --- |
 | Plagiarism/Copyright Blindness | PLAGBLIND | Failure to recognize ethical and legal issues related to using LLM-generated content | "AI writing is not plagiarism" <br> "LLM content is original" |
-| Conditional Acceptance | CONDACC | Ethical acceptance of LLM use only under certain conditions | "AI is fine if used for ..."
+| Conditional Acceptance | CONDACC | Ethical acceptance of LLM use only under certain conditions | "AI is fine if used for ..." <br> "LLM is not fine in my own field, but in ..." |
 | Environmental Neglect | ENVNEGL | Failure to recognize environmental impact of LLMs | Statements suggesting LLMs have negligible environmental impact <br> Lack of awareness of energy consumption associated with LLM training and operation |
 
 ### Dimension 4: Socio-Cognitive Impact
