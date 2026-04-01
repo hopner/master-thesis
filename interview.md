@@ -7,6 +7,7 @@
 
 ### Forklar hvordan du bruker LLMs i hverdagen, og hva du bruker dem til
 - Bruk bruksområdene som blir nevnt til å spørre om hvordan denne prosessen fungerer, og hva de tror skjer "bak kulissene" når de bruker LLMs.
+- Spør om en spesifik prompt de kunne brukt
 - Prøv også å finne ut av til hvilken grad de stoler på LLMs, og hva de gjør for å verifisere informasjonen de får fra dem. Også om det er noen situasjoner der de ikke stoler på LLMs, og hvorfor.
 
 ### Hvordan påvirker LLMs deg i hverdagen, både positivt og negativt?
