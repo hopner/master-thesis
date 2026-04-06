@@ -1,7 +1,7 @@
 \chapter{Misconceptions Taxonomy}
 In order to systematically analyze the misconceptions surrounding \gls{llms}, and the effects of the developed mediation tool, we have developed a taxonomy of misconceptions. This taxonomy is based on a review of the literature on \gls{llm} misconceptions, as well as an analysis of my own experiences and observations of \gls{llm} misconceptions. The field of \gls{llm} misconceptions is vast and rapidly evolving, but still its early stages, and there is no widely accepted taxonomy of misconceptions.
 
-Taxonomies are classification systemts aimed at helping to organize and understand complex phenomena based on characteristics.\cite{kundisch_update_2022} Their use is widely spread in numerous fields to provide a framework for classification, idenfication and description of phenomena.\cite{schoormann_exploring_2022}
+Taxonomies are classification systemts aimed at helping to organize and understand complex phenomena based on characteristics\ \cite{kundisch_update_2022}. Their use is widely spread in numerous fields to provide a framework for classification, idenfication and description of phenomena\ \cite{schoormann_exploring_2022}.
 
 Since the field of \gls{llm} misconceptions is still in its early stages, we have developed a taxonomy that is based on our own analysis and observations, rather than relying on existing taxonomies. Due to the vastness of the field, we have divided the taxonomy into four dimensions, each of which captures a different aspect of \gls{llm} misconceptions. These dimensions are: foundational conceptual accuracy, mechanistic understanding, ethical and academic integrity, and socio-cognitive impact. Each dimension is further divided into subcategories, which capture specific types of misconceptions within that dimension.
 
@@ -9,8 +9,7 @@ Since the field of \gls{llm} misconceptions is still in its early stages, we hav
 \section{Foundational Conceptual Accuracy}
 \begin{table}[htbp]
 \centering
-\caption{Dimension 1: Foundational Conceptual Accuracy}
-\label{dim1}
+\caption{Dimension 1: Foundational Conceptual Accuracy}\label{dim1}
 \begin{tabularx}{\textwidth}{|l|l|X|}
 \hline
 \textbf{Misconception} & \textbf{Label} & \textbf{Description} \\
@@ -26,28 +25,117 @@ Autonomy Overestimation & OVERAUTO & Belief that the \gls{llm} operates independ
 \end{tabularx}
 \end{table}
 
-This dimension of the taxonomy is focused on misconceptions related to the foundational conceptual understanding of \gls{llms}, and also the confusion between \gls{llms} and other types of AI systems. The term ``AI'' exploded in popularity after the relase of GPT-3.5 model, and the term is often used to refer to a wide range of technologies, including \gls{llms}. This has lead to a lot of confusion and misconceptions about what \gls{llms} are and what they can do.
+This dimension of the taxonomy is focused on misconceptions related to the foundational conceptual understanding of \gls{llms}, and also the confusion between \gls{llms} and other types of \gls{ai} systems. The term ``AI'' exploded in popularity after the relase of GPT-3.5 model, and the term is often used to refer to a wide range of technologies, including \gls{llms}. This has lead to a lot of confusion and misconceptions about what \gls{llms} are and what they can do.
 
-\subsection{Anthropomorphism}
+\subsection{Anthropomorphism}\label{anthro}
 The category of anthropomorphism is defined as the attribution of human mental states, intentions, or understanding to \gls{llms}. This misconception seems to be common amongst users who interact with \gls{llms} in a conversational manner, like chatbots. Subjects was placed in this category by using terms such as ``understand'', ``think'', ``learn'' and ``know'' to describe the \gls{llm}'s capabilities in a non-metaphorical way.
 
-Anthropomorphism emerges both from the system design of \gls{llms}, and from the user's interpretation of the system's behavior.\cite{maeda_when_2024} A paper by Maeda and Quan-Haase provides a framework for when \gls{hai} become parasocial. They argue that chatbot's variety in information presentation resemble day-to-day bi-directional communication, and that the users' tendency to fill in missing conversational context causes them to attribute human-like qualities to the system. The roleplaying nature of the chatbot interface is visible through language choices such as personal pronouns and paraphrasing suggests attributes such as intention and understanding in the system which lead users to project inference to the system due to the lack of information about the system's inner workings.\cite{maeda_when_2024} 
-This is empirically supported by a large scale study by Ibrahim et al.\ which found similar anthropomorphic behaviours in all tested \gls{llms} (Gemini 1.5 Pro, Claude 3.5 Sonnet, GPT-4o and Mistral Large).\cite{ibrahim_multi-turn_2026} They found, in particular, use of personal pronouns, vallidation and empathy as the most common anthropomorphic behaviours, and that these behaviours mostly occured after multiple turns of conversation.
+Anthropomorphism emerges both from the system design of \gls{llms}, and from the user's interpretation of the system's behavior\ \cite{maeda_when_2024}. A paper by Maeda and Quan-Haase provides a framework for when \gls{hai} become parasocial. They argue that chatbot's variety in information presentation resemble day-to-day bi-directional communication, and that the users' tendency to fill in missing conversational context causes them to attribute human-like qualities to the system. The roleplaying nature of the chatbot interface is visible through language choices such as personal pronouns and paraphrasing suggests attributes such as intention and understanding in the system which lead users to project inference to the system due to the lack of information about the system's inner workings\ \cite{maeda_when_2024}. 
+This is empirically supported by a large scale study by Ibrahim et al.\ which found similar anthropomorphic behaviours in all tested \gls{llms} (Gemini 1.5 Pro, Claude 3.5 Sonnet, GPT-4o and Mistral Large)\ \cite{ibrahim_multi-turn_2026}. They found, in particular, use of personal pronouns, vallidation and empathy as the most common anthropomorphic behaviours, and that these behaviours mostly occured after multiple turns of conversation.
 
-The anthropomorphism misconception is widespread. An investigation by Colombatto and Fleming in 2024 found that in a sample of 300 US residents, only a third of the participants thought that ChatGPT definetly did not have subjective experiences, while two thirds applied varying degrees of phenomenal consciousness.\cite{colombatto_folk_2024} The investigation also showed that the participants' conciusness attributions increased with usage frequency, rather than correcting the misconception.
+The anthropomorphism misconception is widespread. An investigation by Colombatto and Fleming in 2024 found that in a sample of 300 US residents, only a third of the participants thought that ChatGPT definetly did not have subjective experiences, while two thirds applied varying degrees of phenomenal consciousness\ \cite{colombatto_folk_2024}. The investigation also showed that the participants' conciusness attributions increased with usage frequency, rather than correcting the misconception.
 
-Building on this, Lin\cite{lin_six_2025} conceptualizes anthropomorphism as an ``anthropomorphsm fallacy'', in which users and researchers misinterpret \gls{llm} outputs as evidence of underlying mental life. The fluent, human-seeming responses of \gls{llms} can lead to an enhanced ELIZA effect, encouraging users to attribute understanding, beliefs, or intentions to systems that in reality operate through statistical token prediction. This creates a ``language-user illusion'', where the system's linguistic capabilities are mistaken for genuine cognition. 
+Building on this, Lin\ \cite{lin_six_2025} conceptualizes anthropomorphism as an ``anthropomorphsm fallacy'', in which users and researchers misinterpret \gls{llm} outputs as evidence of underlying mental life. The fluent, human-seeming responses of \gls{llms} can lead to an enhanced ELIZA effect, encouraging users to attribute understanding, beliefs, or intentions to systems that in reality operate through statistical token prediction. This creates a ``language-user illusion'', where the system's linguistic capabilities are mistaken for genuine cognition. 
 
-Furthermore, the anthropomorphic metaphores used surroundning \gls{llms} can reinforce this misconception.\cite{lin_six_2025} Unlike humans who are influenced by their own experiences, \gls{llms} simulate a wide range of viewpoints based on their training data\cite{lin_six_2025}, which can lead to overestimation of their capabilities.
+Furthermore, the anthropomorphic metaphores used surroundning \gls{llms} can reinforce this misconception\ \cite{lin_six_2025}. Unlike humans who are influenced by their own experiences, \gls{llms} simulate a wide range of viewpoints based on their training data\ \cite{lin_six_2025}, which can lead to overestimation of their capabilities.
 
-\subsection{Deterministic Automation}
+\subsection{Deterministic Automation}\label{detauto}
+The category of deterministic automation is defined as the confusion between \gls{llms} and deterministic automation systems. One could say that this misconception is placed on the oposite side of the spectrum compared to the previous misconception of anthropomorphism. Before the widespread use of \gls{llms}, one could often find deterministic automation systems in customer service chatbots, which were designed to follow a fixed set of rules and provide predetermined responses. It seems natural that users would initially confuse \gls{llms} with these deterministic systems, especially since they are often presented in similar interfaces. Subjects were placed in this category if they described \gls{llms} as following a fixed set of rules, or if they expressed surprise at the variability and creativity of \gls{llm} outputs.
 
-\subsection{Accuracy Overestimation}
+This misconception is likely reasoned by a lack of interaction experience with \gls{llms}. In a study performed by Schneider in 2025, analyzing over 200 000 conversations, he found that users initially approached \gls{llms} as traditional software tools\ \cite{schneider_mental_2025}. Initial prompts were often structured and machine-like, but already on the second turn, users shifted towards more natural, conversational interaction. Thsi was shown by the use of a less complex language, use of politeness indicators, shorter prompts and more personal interaction.
 
-\subsection{Autonomy Overestimation}
+A concequence of this misconception comes when \gls{llms} actually replace deterministic automation systems, leading to failures in safety-critical deployments. Vinay (2025) argues that \gls{llm} failure patterns ``differ fundamentally from those of traditional machine learning models'' and that a lack of awareness of these differences can lead to failures going undetected\ \cite{vinay_failure_2025}. For developers, automotive code generation tools produce syntax violations, invalid refrence errors and \gls{api} knowledge conflicts in high rates, which are failures deterministic systems do not produce\ \cite{pavel_hallucination_2025}.
+
+This misconception could also work as a springboard to other misconceptions covered in this taxonomy. Patterns of logical reasoning could lead to an overtrust in \gls{llms} leading to placements in categories of \hyperref[overacc]{OVERACC} and \hyperref[credbias]{CREDBIAS}\ \cite{floridi_what_2025}\ \cite{nahar_fakes_2024}.
+
+\subsection{Accuracy Overestimation}\label{overacc}
+The category of accuracy overestimation is defined as the overestimation of the reliability and correctness of \gls{llm} outputs. This misconception is likely corelated with other misconceptions in this taxonomy, on which failure to understand fundamental concepts and mechanics of \gls{llms} can lead to an overestimation of their capabilities. Subjects were placed in this category if they expressed a belief that \gls{llms} are more accurate or reliable than they actually are, or if they failed to recognize the potential for errors and inaccuracies in \gls{llm} outputs.
+
+The most fundamental reason for this misconception is automation bias, which is the tendency for people to trust in automated systems even when they contradict available evidence. Carnat (2024) argues that this phenomena spawns from \hyperref[anthro]{ANTHRO}\ \cite{carnat_human_2024}. The misconception is widespread, shown by a experiment by Klingbeil et al.\ in 2024, where they found that the mere knowledge of advice being generated by an \gls{ai} causes people to overrely on it. This is the case even when the advice contradicts available contextual information and their own assessments\ \cite{klingbeil_trust_2024}.
+
+Accuracy overestimation is even present in the \gls{llms} themselves. In 2025, Sun et al.\ found that after testing the confidence calibration of five different \gls{llms}, they overestimate their accuracy by 20\% to 60\%\ \cite{sun_large_2025}. Naderi et al.\ also found similar results saying that \gls{llms} retained high confidence regardless of the correctness of their outputs\ \cite{naderi_across_2026}.
+
+A rather obvious consequence of this misconception is the spreading of misinformation. The logical patterned output of \gls{llms} are often perceived to be valid, trustworthy and satisfactory, and users also show a high tendency to follow \gls{llm} advice provided\ \cite{shekar_people_2025}.
+
+\subsection{Autonomy Overestimation}\label{overauto}
+The category of autonomy overestimation is defined as the belief that the \gls{llm} operates independently or possesses agency. This category was was inspired by a study performed by Wang et al.\ in 2025, where they researched the mental models of \gls{genai} chatbot ecosystems\ \cite{wang_mental_2025}. In this study, participants where to asked to draw a diagram of how they thought the chatbot ecosystem worked when they used it to book a room on a hotel. The study showed various mental models of the degree of autonomy of the \gls{genai} in the ecosystem. Participants placed in this category expressed beliefs that the \gls{llm} operates independently, or ``acts'' on behalf of the user.
+
+It is likely that this misconception spawns from the \hyperref[anthro]{ANTHRO} misconception, as it is natural to assume a real social actor when presented with a system that produces natural language outputs\cite{reinecke_double-edged_2025}\cite{jose_digital_2025}. Thus, it is expected to be a high level of corelation between these two categories.
 
 \section{Mechanistic Understanding}
+\begin{table}[htbp]
+\centering
+\caption{Dimension 2: Mechanistic Understanding}\label{dim2}
+\begin{tabularx}{\textwidth}{|l|l|X|}
+\hline
+\textbf{Misconception} & \textbf{Label} & \textbf{Description} \\
+\hline
+Real-Time Data Belief & REALTIME & Belief that \gls{llms} retrieves current information \\
+\hline
+Hallucination Blindness & HALLBLIND & Failure to recognize that \gls{llms} can produce false or fabricated information. \\
+\hline
+Context Window Neglect & CONTEXNEG & Failure to understand the limitations of the context window \\
+\hline
+Tokenization Neglect & TOKENNEG & Lack of awareness that the \gls{llm} processes language as tokens rather than semantic units. \\
+\hline
+Source Attribution Error & SOURCEATTR & Belief that \gls{llm} output originate from specific identifiable sources. \\
+\hline
+\end{tabularx}
+\end{table}
+The second dimension of the taxonomy is focused on misconceptions related to mechanics specific to that of a \gls{llm}. Most modern \gls{llms} today are transformer-based models, and not being aware of the mechanics of how these models work can lead to misconceptions about their capabilities and limitations. This dimension differs from the first dimension of foundational conceptual accuracy, as it is focused on specific mechanics of \gls{llms}, rather than that of \gls{ai} in general.
+
+\subsection{Real-Time Data Belief}\label{realtime}
+
+
+\subsection{Hallucination Blindness}\label{hallblind}
+\subsection{Context Window Neglect}\label{contexneg}
+\subsection{Tokenization Neglect}\label{tokenneg}
+\subsection{Source Attribution Error}\label{sourceattr}
 
 \section{Ethical and Academic Integrity}
+\begin{table}[htbp]
+\centering
+\caption{Dimension 3: Ethical and Academic Integrity}\label{dim3}
+\begin{tabularx}{\textwidth}{|l|l|X|}
+\hline
+\textbf{Misconception} & \textbf{Label} & \textbf{Description} \\
+\hline
+Plagiarism Blindness & PLAGBLIND & Failure to recognize ethical and legal issues related to using \gls{llm}-generated content. \\
+\hline
+Copyright Blindness & COPYBLIND & Belief that \gls{llm}-generated content is original and not subject to copyright concerns. \\
+\hline
+Conditional Acceptance & CONDACC & Ethical acceptance of \gls{llm} use only under certain conditions or domains. \\
+\hline
+Environmental Neglect & ENVNEGL & Failure to recognize the environmental impact of \gls{llm} training and operation. \\
+\hline
+\end{tabularx}
+\end{table}
+
+\subsection{Plagiarism Blindness}\label{plagblind}
+\subsection{Copyright Blindness}\label{copyblind}
+\subsection{Conditional Acceptance}\label{condacc}
+\subsection{Environmental Neglect}\label{envnegl}
 
 \section{Socio-Cognitive Impact}
+\begin{table}[htbp]
+\centering
+\caption{Dimension 4: Socio-Cognitive Impact}\label{dim4}
+\begin{tabularx}{\textwidth}{|l|l|X|}
+\hline
+\textbf{Misconception} & \textbf{Label} & \textbf{Description} \\
+\hline
+Replacement Fear & REPLFEAR & Belief that \gls{llms} will replace human roles, expertise, or professions. \\
+\hline
+Cognitive Passivity & COGPASS & Tendency to rely on \gls{llms} rather than engaging in independent reasoning or critical thinking. \\
+\hline
+Dependency Risk & DEPRISK & Concern or recognition that users may become reliant on \gls{llms} for cognitive tasks. \\
+\hline
+Credibility Bias & CREDBIAS & Treating \gls{llm} outputs as inherently truthful or authoritative without critical evaluation. \\
+\hline
+\end{tabularx}
+\end{table}
+
+\subsection{Replacement Fear}\label{replfear}
+\subsection{Cognitive Passivity}\label{cogpass}
+\subsection{Dependency Risk}\label{deprisk}
+\subsection{Credibility Bias}\label{credbias}
