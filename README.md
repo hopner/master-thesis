@@ -44,8 +44,9 @@
 | Real-time Data Belief | REALTIME | Belief that the LLM retrieves current information | "Search the internet" <br> "Check online" |
 | Hallucination Blindness | HALLBLIND | Failure to recognize that LLMs can produce false or fabricated information | Need to be added |
 | Context Window Neglect | CONTEXNEG | Failure to recognize limits of LLMs' context window | "Keeps track of previous conversation" <br> "Remembers" |
-| Tokenization Neglect | TOKENNEG | Lack of awareness that LLMs process language as tokens rather than semantic units | Expectation of word-level understanding and semantic connection towards real life objects |
+| Semantic Understanding | SEMUNDER | Lack of awareness that the LLM processes language as tokens rather than semantic units. | "Understands meaning" <br> "Grasps context" |
 | Source Attribution Error | SOURCEATTR | Belief that LLM output originate from specific identifiable sources | "Citing sources" <br> "Finds data from" |
+| Conditional Treatment | CONDTREAT | Belief that LLMs process prompts differently based on the content or context | |
 
 ### Dimension 3: Ethical and Academic Integrity
 | Label | Code | Definition | Examples |
