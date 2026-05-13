@@ -1,0 +1,37 @@
+\chapter{Background and Literature}
+\section{The AI Revolution (?)}
+\subsection{Brief History of NLP}
+\subsection{Exposure to the General Masses}
+
+\section{Didactic Models}
+\subsection{The Zone of Proximal Flow}
+
+\section{Content Analysis}
+Content analysis is a research method used to analyze and interpret the content of various forms of communication, such as text, audio, or video\ \cite{elo_qualitative_2008}. It is a technique designed for making replicable and valid results\ \cite{krippendorff_content_2004}. It involves systematically describing and quantifying the content of communication in order to identify patterns, themes, and relationships. This involves coding the content into categories, which can be done using either an inductive or deductive approach. In an inductive approach, categories are derived from the data itself, while in a deductive approach, categories are predefined based on existing theories or frameworks\ \cite{elo_qualitative_2008}. If there are more than one coder, it is possible to calculate inter-coder reliability, which is a measure of the agreement between coders. This can be done using various coefficients, such as Cohen's \(\kappa \) or Krippendorff's \(\alpha \).
+
+\subsection{Deductive Approach}
+\subsection{Cohen's \(\kappa\)}
+Cohens \(\kappa \) is a coefficient that measures aggreement between two raters who each classify items into mutually exclusive categories. It was first presented by Jacob Cohen in a paper published in 1960\ \cite{cohen_coefficient_1960}. Given a collection of categories, and 2 coders who classify items into these categories, Cohen's \(\kappa \) is calculated as follows:
+\begin{align}
+    \kappa = \frac{p_o - p_e}{1 - p_c}
+\end{align}
+where \(p_o\) is the relative observed agreement among raters, and \(p_c\) is the hypothetical probability of agreement by chance. It can be translated to the use of frequencies as follows:
+\begin{align}
+    \kappa = \frac{f_o - f_c}{N - f_c}
+\end{align}
+where \(f_o\) is the observed frequency of agreement, \(f_c\) is the expected frequency of agreement by chance, and \(N\) is the total number of items. 
+
+The value of \(\kappa \) can range from -1 to 1, where it gets a value of 0 when the agreement is exactly what would be expected by chance. A positive value indicates agreement, with a value of 1 indicating perfect agreement. Values above 0.6 indicate substantial agreement, while values above 0.8 indicate good agreement\ \cite{pandey_deductive_2019}. The value of 1 is only acheived when both coders classify the same number of items into each category. Therefore, you can still argue that there is agreement even if \(\kappa \) is quite low, by comparing the calculated \(\kappa \) to the maximum possible \(\kappa_M\), which is calculated as follows:
+\begin{align}
+    \kappa_M = \frac{p_{oM}-p_c}{1-p_c}
+\end{align}
+Where \(p_{oM}\) is the maximum observed agreement, found by summing the minimum of the two coders' probabilities for each category.
+
+Cohen's \(\kappa \) is criticized for penalizing coders who have aggrement on marginal frequencies, as two coders with marginal frequencies must have much higher aggreement-rate than two coders with ``radically different marginals''\ \cite{krippendorff_content_2004}.
+
+\subsection{Krippendorff's \(\alpha\)}
+Krippendorff's \(\alpha \) is a coefficient that measures the reliability of coding in content analysis. In its most basic form, it is calculated as follows:
+\begin{align}
+    \alpha = 1 - \frac{D_o}{D_e}
+\end{align}
+where \(D_o\) is the observed disagreement, and \(D_e\) is the expected disagreement by chance. How these are calculated depends on the data. 
