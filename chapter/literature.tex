@@ -1,5 +1,5 @@
 \chapter{Background and Literature}
-\section{The AI Revolution (?)}
+\section{The AI Boom}
 \subsection{Brief History of NLP}
 \subsection{Exposure to the General Masses}
 
@@ -10,6 +10,7 @@
 Content analysis is a research method used to analyze and interpret the content of various forms of communication, such as text, audio, or video\ \cite{elo_qualitative_2008}. It is a technique designed for making replicable and valid results\ \cite{krippendorff_content_2004}. It involves systematically describing and quantifying the content of communication in order to identify patterns, themes, and relationships. This involves coding the content into categories, which can be done using either an inductive or deductive approach. In an inductive approach, categories are derived from the data itself, while in a deductive approach, categories are predefined based on existing theories or frameworks\ \cite{elo_qualitative_2008}. If there are more than one coder, it is possible to calculate inter-coder reliability, which is a measure of the agreement between coders. This can be done using various coefficients, such as Cohen's \(\kappa \) or Krippendorff's \(\alpha \).
 
 \subsection{Deductive Approach}
+
 \subsection{Cohen's \(\kappa\)}
 Cohens \(\kappa \) is a coefficient that measures aggreement between two raters who each classify items into mutually exclusive categories. It was first presented by Jacob Cohen in a paper published in 1960\ \cite{cohen_coefficient_1960}. Given a collection of categories, and 2 coders who classify items into these categories, Cohen's \(\kappa \) is calculated as follows:
 \begin{align}
@@ -30,8 +31,51 @@ Where \(p_{oM}\) is the maximum observed agreement, found by summing the minimum
 Cohen's \(\kappa \) is criticized for penalizing coders who have aggrement on marginal frequencies, as two coders with marginal frequencies must have much higher aggreement-rate than two coders with ``radically different marginals''\ \cite{krippendorff_content_2004}.
 
 \subsection{Krippendorff's \(\alpha\)}
-Krippendorff's \(\alpha \) is a coefficient that measures the reliability of coding in content analysis. In its most basic form, it is calculated as follows:
+Krippendorff's \(\alpha \) is a coefficient that measures the reliability of coding in content analysis\ \cite{krippendorff_content_2004}. In its most basic form, it is calculated as follows:
 \begin{align}
     \alpha = 1 - \frac{D_o}{D_e}
 \end{align}
-where \(D_o\) is the observed disagreement, and \(D_e\) is the expected disagreement by chance. How these are calculated depends on the data. 
+where \(D_o\) is the observed disagreement, and \(D_e\) is the expected disagreement by chance. How these are calculated depends on the data. It normally lands on a value between 0 and 1, where a value of 1 indicates perfect agreement, and a value of 0 indicates agreement and disagreement ocure by chance. It can however be negative if the observed disagreement is greater than the expected disagreement by chance, which indicates systematic disagreement\ \cite{krippendorff_content_2004}.
+
+
+Given 2 coders, a set of categories, and a set of items, you can calculate \(\alpha \) for each category by using the binary data approach\ \cite{krippendorff_content_2004} on the pressence or absence of each category in the coding. This process starts by tabulating the encodings for each category with one row for each coder, and one column for each item (shown in \autoref{coding_table}). This is called a reliability data matrix.
+
+\begin{table}
+    \centering
+    \caption{Tabular representation of binary coding}
+    \label{coding_table}
+    \begin{tabular}{l|cccc}
+            & Item 1 & Item 2 & \ldots & Item k \\
+            \hline
+            Coder 1 & $c_{11}$ & $c_{12}$ & \ldots & $c_{1k}$ \\
+            Coder 2 & $c_{21}$ & $c_{22}$ & \ldots & $c_{2k}$
+    \end{tabular}
+\end{table}
+
+From these encodings, you can create coincidence matrices for each category as shown in \autoref{coincidence_matrix}. Here, \(o_{00}\) is the number of items where both coders did not code the category, \(o_{11}\) is the number of items where both coders coded the category, and \(o_{01}\) and \(o_{10}\) are the number of items where only one of the coders coded the category.
+
+\begin{table}
+    \centering
+    \caption{Tabular representation of coincidence matrix for a category}
+    \label{coincidence_matrix}
+    \begin{tabular}{l|cc|l}
+            & 0 & 1 & \\
+            \hline
+            0 & $o_{00}$ & $o_{01}$ & $n_0$ \\
+            1 & $o_{10}$ & $o_{11}$ & $n_1$ \\
+            \hline
+            & $n_0$ & $n_1$ & $n$
+    \end{tabular}
+\end{table}
+
+For binary nominal data with two coders, disagreement occurs
+when one coder assigns 0 and the other assigns 1. The observed
+disagreement is therefore proportional to the number of off-diagonal
+entries in the coincidence matrix.
+
+Using the binary coincidence formulation presented by
+Krippendorff\ \cite{krippendorff_content_2004}, the coefficient
+can be simplified to:
+\begin{align}
+    \alpha = 1 - (n-1)\frac{o_{01}}{n_0 n_1}
+\end{align}
