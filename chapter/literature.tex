@@ -12,7 +12,10 @@ Content analysis is a research method used to analyze and interpret the content 
 \subsection{Deductive Approach}
 In a deductive approach to content analysis, the researcher starts with a predefined set of categories based on existing theories or literature\ \cite{elo_qualitative_2008}. After preparation, the researcher develops a coding scheme, which is a set of rules for how to assign content to the predefined categories. The researcher then applies this coding scheme to the data, systematically categorizing the content according to the predefined categories. The common coding scheme is important for ensuring consistency and reliability across multiple coders.
 
-\subsection{Cohen's \(\kappa\)}
+\subsection{Inter-Rater Reliability}
+Data is used as trusted ground for making inferences, but in order to make content analysis indisputable, it is important to ensure that the data is generated with the necessary precautions and that there is a common understanding of what the data represents\ \cite{krippendorff_content_2004}. When multiple coders are involved in the coding process, it is important to ensure that they have a common understanding of the coding scheme and that they apply it consistently. This can be assessed through \gls{irr} analysis, which measures the level of agreement between coders. For categorical data, common coefficients for measuring \gls{irr} include Cohen's \(\kappa \) and Krippendorff's \(\alpha \). 
+
+\subsubsection*{Cohen's \(\kappa\)}
 Cohens \(\kappa \) is a coefficient that measures aggreement between two raters who each classify items into mutually exclusive categories. It was first presented by Jacob Cohen in a paper published in 1960\ \cite{cohen_coefficient_1960}. Given a collection of categories, and 2 coders who classify items into these categories, Cohen's \(\kappa \) is calculated as follows:
 \begin{align}
     \kappa = \frac{p_o - p_e}{1 - p_c}
@@ -31,7 +34,7 @@ Where \(p_{oM}\) is the maximum observed agreement, found by summing the minimum
 
 Cohen's \(\kappa \) is criticized for penalizing coders who have aggrement on marginal frequencies, as two coders with marginal frequencies must have much higher aggreement-rate than two coders with ``radically different marginals''\ \cite{krippendorff_content_2004}.
 
-\subsection{Krippendorff's \(\alpha\)}
+\subsubsection*{Krippendorff's \(\alpha\)}
 Krippendorff's \(\alpha \) is a coefficient that measures the reliability of coding in content analysis\ \cite{krippendorff_content_2004}. In its most basic form, it is calculated as follows:
 \begin{align}
     \alpha = 1 - \frac{D_o}{D_e}
