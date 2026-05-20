@@ -1,5 +1,236 @@
 \chapter{Results}
 
 \section{Assessment Interviews}
+\begin{figure}
+    \centering
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \scriptsize
+        \resizebox{\linewidth}{!}{
+            \begin{tabular}{|c|c|c|c|c|}
+                \hline
+                \textbf{Category} & \textbf{Agreement} & \textbf{\(\kappa\)} & \textbf{\(\alpha\)} & \textbf{Prevalence} \\
+                \hline
+                ANTHRO & 50\% & -0.19 & -0.267 & 60\% \\
+                \hline
+                DETAUTO & 50\% & 0.194 & 0.040 & 30\% \\
+                \hline
+                OVERACC & 60\% & 0.200 & 0.208 & 30\% \\
+                \hline
+                OVERAUTO & 80\% & 0.600 & 0.604 & 30\% \\
+                \hline
+                REALTIME & 20\% & -0.176 & -0.520 & 80\% \\
+                \hline
+                HALLBLIND & 70\% & 0.286 & 0.240 & 10\% \\
+                \hline
+                CONTEXNEG & 50\% & -0.316 & -0.267 & 30\% \\
+                \hline
+                SEMUNDER & 50\% & 0.000 & -0.044 & 50\% \\
+                \hline
+                SOURCEATTR & 80\% & 0.600 & 0.604 & 30\% \\
+                \hline
+                CONDTREAT & 80\% & 0.545 & 0.548 & 40\% \\
+                \hline
+                PLAGBLIND & 90\% & 0.000 & 0.000 & 10\% \\
+                \hline
+                COPYBLIND & 90\% & 0.000 & 0.000 & 10\% \\
+                \hline
+                CONDACC & 50\% & 0.138 & -0.044 & 10\% \\
+                \hline
+                ENVNEGL & 100\% & — & — & 0\% \\
+                \hline
+                REPLFEAR & 60\% & 0.091 & 0.095 & 20\% \\
+                \hline
+                COGPASS & 70\% & 0.400 & 0.424 & 50\% \\
+                \hline
+                DEPRISK & 90\% & 0.615 & 0.627 & 10\% \\
+                \hline
+                CREDBIAS & 70\% & 0.286 & 0.240 & 40\% \\
+                \hline
+            \end{tabular}
+        }
+        \caption{IRR values for Assessment Interviews}
+        \label{fig:irr_table_ass}
+    \end{subfigure}\hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/fig_alpha_kappa_ass.png}
+        \caption{Agreement Coefficients for Assessment Interviews}
+        \label{fig:alpha_kappa_ass}
+    \end{subfigure}
+    \caption{IRR values and kappa/alpha plot for Assessment Interviews}
+    \label{fig:combined_table_alpha_ass}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{figures/fig_coincidence_ass.png}
+    \caption{Coincidence Matrices for each Category in Assessment Interviews}
+    \label{fig:coincidence_ass}
+\end{figure}
+
+After the two coders completed their assessments, the codings were gathered for \gls{irr} analysis. \autoref{fig:irr_table_ass} shows the calculated agreement percentage, \gls{irr}-coefficients and prevalence accross each category. \hyperref[envnegl]{ENVNEGL} was not found in any of the transcribt by either coder, so a coefficient could not be calculated. \autoref{fig:alpha_kappa_ass} shows the level of agreement on each category. It was noticed a weak agreement (both coefficients above 0.6) in the categories of
+\begin{itemize}
+    \item \hyperref[cogpass]{COGPASS}
+    \item \hyperref[semunder]{SEMUNDER}
+    \item \hyperref[overauto]{OVERAUTO},
+\end{itemize}
+a systematic disagreement (both coefficients below 0) in the categories of
+\begin{itemize}
+    \item \hyperref[anthro]{ANTHRO}
+    \item \hyperref[realtime]{REALTIME}
+    \item \hyperref[contexneg]{CONTEXNEG},
+\end{itemize}
+a minor systematic disagreement (one coefficient below 0) in the categories of
+\begin{itemize}
+    \item \hyperref[semunder]{SEMUNDER}
+    \item \hyperref[condacc]{CONDACC},
+\end{itemize}
+and a minor agreement (both coefficients between 0 and 0.6) in the rest of the categories.
+
+The coincidence matrices for each category are shown in \autoref{fig:coincidence_ass}. Here, agreements are shown on the diagonal, while disagreements are shown on the antidiagonal. Notice that all values on the antidiagonal are equal as there are only two coders.
+
+There was no strong or perfect agreement on any of the categories, however the coeffcients are vulnerable to a small dataset. The categories and codings were discussed and it was decided on a final coding matrix to be used for the follow-up interviews. \autoref{table:disagreements_ass} shows a selection of quotes on the resolved disagreements between coders, the final coding is shown in \autoref{final_coding_ass}.
+
+\begin{table}
+    \centering
+    \caption{Examples of disagreements between coders}
+    \label{table:disagreements_ass}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        \textbf{Category} & \textbf{Transcript} & \textbf{Translation} & \textbf{Conclusion} \\
+        \hline
+        EX & ``Jeg trodde...'' & ``I thought...'' & Present
+    \end{tabular}
+\end{table}
+
+\begin{sidewaystable}[p]
+\centering
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.1}
+%=========================
+% Top row
+%=========================
+\begin{minipage}[t]{0.36\textwidth}
+\centering
+\small
+\textbf{(a) Dimension 1: FCA}
+
+\vspace{0.4em}
+
+\begin{tabular}{ccccc}
+\hline
+\scriptsize p\_id &
+\scriptsize ANTHRO &
+\scriptsize DETAUTO &
+\scriptsize OVERACC &
+\scriptsize OVERAUTO \\
+\hline
+1  & 1 & 0 & 1 & 1 \\
+2  & 1 & 1 & 0 & 0 \\
+3  & 1 & 1 & 0 & 0 \\
+4  & 0 & 1 & 0 & 0 \\
+5  & 1 & 0 & 1 & 0 \\
+6  & 1 & 0 & 0 & 0 \\
+7  & 1 & 0 & 1 & 0 \\
+8  & 1 & 1 & 1 & 1 \\
+9  & 1 & 0 & 0 & 0 \\
+10 & 0 & 0 & 0 & 1 \\
+\hline
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.60\textwidth}
+\centering
+\scriptsize
+\textbf{(b) Dimension 2: MU}
+
+\vspace{0.4em}
+
+\setlength{\tabcolsep}{3pt}
+
+\begin{tabular}{ccccccc}
+\hline
+p\_id &
+REALTIME &
+HALLBLIND &
+CONTEXNEG &
+SEMUNDER &
+SOURCEATTR &
+CONDTREAT \\
+\hline
+1  & 1 & 0 & 0 & 0 & 1 & 0 \\
+2  & 1 & 0 & 0 & 0 & 0 & 0 \\
+3  & 1 & 0 & 1 & 0 & 1 & 0 \\
+4  & 1 & 1 & 1 & 1 & 0 & 0 \\
+5  & 0 & 1 & 1 & 0 & 1 & 0 \\
+6  & 1 & 1 & 0 & 0 & 0 & 0 \\
+7  & 0 & 0 & 0 & 1 & 0 & 0 \\
+8  & 1 & 0 & 0 & 1 & 1 & 1 \\
+9  & 1 & 0 & 0 & 1 & 0 & 1 \\
+10 & 1 & 1 & 0 & 0 & 1 & 0 \\
+\hline
+\end{tabular}
+\end{minipage}
+
+\vspace{1.5em}
+
+%=========================
+% Bottom row
+%=========================
+\begin{minipage}[t]{0.48\textwidth}
+\centering
+\small
+\textbf{(c) Dimension 3: EAI}
+
+\vspace{0.4em}
+
+\begin{tabular}{ccccc}
+\hline
+p\_id & PLAGBLIND & COPYBLIND & CONDACC & ENVNEGL \\
+\hline
+1  & 0 & 0 & 0 & 0 \\
+2  & 0 & 0 & 0 & 0 \\
+3  & 0 & 0 & 1 & 0 \\
+4  & 0 & 0 & 0 & 0 \\
+5  & 0 & 0 & 1 & 0 \\
+6  & 0 & 0 & 0 & 0 \\
+7  & 0 & 0 & 1 & 0 \\
+8  & 0 & 0 & 0 & 0 \\
+9  & 0 & 0 & 0 & 0 \\
+10 & 0 & 0 & 1 & 0 \\
+\hline
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\centering
+\small
+\textbf{(d) Dimension 4: SCI}
+
+\vspace{0.4em}
+
+\begin{tabular}{ccccc}
+\hline
+p\_id & REPLFEAR & COGPASS & DEPRISK & CREDBIAS \\
+\hline
+1  & 0 & 1 & 1 & 0 \\
+2  & 0 & 0 & 0 & 0 \\
+3  & 0 & 0 & 0 & 0 \\
+4  & 1 & 0 & 0 & 0 \\
+5  & 0 & 1 & 0 & 0 \\
+6  & 0 & 1 & 0 & 0 \\
+7  & 0 & 1 & 0 & 0 \\
+8  & 0 & 1 & 0 & 0 \\
+9  & 0 & 0 & 0 & 0 \\
+10 & 0 & 0 & 0 & 1 \\
+\hline
+\end{tabular}
+\end{minipage}
+
+\caption{Binary indicator matrices for the four dimensions.}
+\label{final_coding_ass}
+\end{sidewaystable}
+
 \section{Follow Up Interviews}
 \section{Shifts}
