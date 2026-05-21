@@ -1,7 +1,61 @@
 \chapter{Discussion}
 
 \section{Interpretation of Results}
-\section{Category Placements}
-\section{Corelation between Categories}
+\subsection*{Assessment Interviews}
+After analyzing the results from the assessment interviews, several key insights emerged. Three out of four categories in the dimension of Ethical and Academic Integrity were declared as absent in the dataset. \hyperref[envnegl]{ENVNEGL} was not found in any of the transcripts, by any of the coders, which indicate that the general masses have been exposed to the environmental consequences of \gls{genai}, and are aware of them to some extend. Although most of the participants did not understand why these models are environmentally costly, they were aware of the fact that they are. 
+\hyperref[plagblind]{PLAGBLIND} and \hyperref[copyblind]{COPYBLIND} were also declared as absent in the dataset, but with initial disagreements between coders. Given the definitions of these categories, the format of a semistructured interview made it difficult to identify these categories. We do not think that these categories are necessarily absent in all participants, but rather that the format of the interview made it difficult to identify them.
+
+Given the small dataset of 10 participants, it was expected that the agreement coefficients would be vulnerable to small changes in the data. In an attempt of isolate the prevalence imbalance from coder disagreements, we compared the calculated \(\kappa \) with the maximum achievable \(\kappa_{\max}\). 
+\autoref{tab:kappa_max_ass} shows the calculated \(\kappa \) and \(\kappa_{\max}\) for each category. Neglecting the non-observed categories, we see that DETAUTO, OVERAUTO, HALLBLIND, SOURCEATTR, CONDTREAT, CONDACC, DEPRISK and CREDBIAS all reach their theoretical maximum (\(\kappa = \kappa_{\max}\)), indicating that observed agreement is primarily constrained by the distribution rather than coder inconsistencies.
+Meanwhile, categories exhibiting \(\kappa < \kappa_{\max}\) may indicate that the coders had different interpretations of the given definitions.
+
+\begin{table}[h]
+\centering
+\caption{Cohen's $\kappa$ and maximum achievable $\kappa$ per misconception category (assessment interviews)}
+\begin{tabular}{lrr}
+\hline
+\textbf{Category} & \textbf{$\kappa$} & \textbf{$\kappa_{\max}$} \\
+\hline
+ANTHRO      & -0.190 & 0.286 \\
+DETAUTO     & 0.194  & 0.194 \\
+OVERACC     & 0.200  & 0.600 \\
+OVERAUTO    & 0.600  & 0.600 \\
+REALTIME    & -0.176 & 0.118 \\
+HALLBLIND   & 0.286  & 0.286 \\
+CONTEXNEG   & -0.316 & 0.737 \\
+SEMUNDER    & 0.000  & 0.400 \\
+SOURCEATTR  & 0.600  & 0.600 \\
+CONDTREAT   & 0.545  & 0.545 \\
+PLAGBLIND   & 0.000  & 0.000 \\
+COPYBLIND   & 0.000  & 0.000 \\
+CONDACC     & 0.138  & 0.138 \\
+ENVNEGL     & --     & -- \\
+REPLFEAR    & 0.091  & 0.545 \\
+COGPASS     & 0.400  & 0.800 \\
+DEPRISK     & 0.615  & 0.615 \\
+CREDBIAS    & 0.286  & 0.286 \\
+\hline
+\end{tabular}
+\label{tab:kappa_max_ass}
+\end{table}
+
+The categories with negative \gls{irr} coefficients do correspond to the categories were the two coders had different interpretations of the given definitions. It was a consensus between coders that the category of \hyperref[anthro]{ANTHRO} was such a broad concept that it was difficult to apply consistently. The disagreements here were mostly due to missing a specific phrasing or quote in the coding process.
+The definition of \hyperref[realtime]{REALTIME} was given as ``Belief that the LLM retrieves current information.'' Here, the disagreements came from what counts as ``current information.'' It was settled that this should count as both retrieving and/or information from the internet, the current conversation or other conversations as the interaction happened. For instance, this quote was marked by one of the coders, but was in the end determined to be presence of the misconception:
+\begin{quote}
+    ``It gets [information] on its server from conversations with other people contiously. And you can also say that one does not know how often the language model you are talking with gets new information, or not the language model, but the server you are talking with gets information from other servers.''\footnote{Original in Norwegian: 
+    ``Den får på serveren sin fra samtaler med andre mennesker kontinuerlig. Og så kan du også si at man vet ikke hvor ofte språkmodellen du prater med får inn ny informasjon eller ikke språkmodellen, men den serveren du prater med får informasjon fra andre servere.''}
+\end{quote}
+Modern \gls{rag}-based \gls{llms} has also made it more difficult to determine what counts as ``retrieving current information'', as the line between retrieving and generating has become more blurred.
+
+It was also difference in interpretation of the definition of \hyperref[contexneg]{CONTEXNEG}, which was defined as ``Failure to recognize limits of LLMs' context window.'' One interpretation was that the ``limits of the context window'' should be recognized as the amount of tokens that can be processed at once, while the other interpretation was that it should be recognized as the fact that there is a context window and that limits what and which information the model can use to generate responses, as well as the limitations within that context window. It was settled that the second interpretation should be used, which led to cases like the following being marked as presence of the misconception:
+\begin{quote}
+    ``Yes, it [the model] usually takes into account what I talked with it about earlier, both in conversations, but also outside of that conversation. It can pull in things from other conversations.''
+    \footnote{Original in Norwegian: ``Ja, den bruker å ta hensyn til hva jeg snakket med den om tidligere, både i samtaler, men også utenfor den samtalen. Den kan dra inn ting fra andre samtaler. ''}
+\end{quote}
+
+The remaining disagreements were not as systematic as the ones mentioned above, but were rather due to missing a specific phrasing or interpreting a specific phrasing as not sufficient to mark the category as present. These were quickly resolved by going through the disagreements together and discussing the specific cases to land on the consensus shown in \autoref{final_coding_ass}.   
+
 \section{Methodological Limitations}
+Given the amount of categories and the complexity of their definitions, the sample size of 10 participants is too small to make any generalizable conclusions. Optimally also, the analysis of the assessment interviews should also have been completed before starting the process of the follow-up interviews, as this would enhance the questions asked during that interview. Due to time limitations it was not possible to do the final coding on the assessment interviews before the follow-up interviews started. With the final coding available, it would be easier to ask tailored questions aimed at the specific categories market for that participant.
+
 \section{Future Work}
