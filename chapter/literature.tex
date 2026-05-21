@@ -1,8 +1,25 @@
 \chapter{Background and Literature}
-\section{The AI Boom}
-\subsection{Brief History of NLP}
-\subsection{Exposure to the General Masses}
+\section{The Emergence of Modern AI Systems}
+\subsection{A Brief History of AI}
+`Can machines think?' This question was famously posed by Alan Turing in his 1950 paper ``Computing Machinery and Intelligence''\ \cite{turing_computing_1950}. Rather than trying to define what it means for a machine to think, Turing proposed the ``Imitation Game'', now commonly known as the Turing Test, as a way to determine whether a machine can exhibit intelligent behavior indistinguishable from that of a human. The game consists of 3 participants: a human interrogator, a human respondent, and a machine respondent. The interrogator is tasked with determining which of the two respondents is the machine, based solely on their responses to questions. The machine, on the other hand, is tasked with convincing the interrogator that it is the human respondent.
 
+As a consequence of this, Turing shifted the discussion from the abstract question of whether machines can think based on their internal cognition, to the more practical question of whether machines can exhibit intelligent behavior through observable linguistic behaviour. This emphasis on conversational imitation would many years later be central to both the public perception and the scientific development of \gls{ai}.
+
+The term ``Artificial Intelligence'' has its origins from 1955, when John McCarthy quite optimistaclly proposed a 2 month workshop the following summer, where 10 researchers would gather to solve this ``thinking machines'' thing\ \cite{strumke_maskiner_2023}. The term was created to distinguish the field from the also up and comming field of cybernetics. This early optimism is a common theme in the history of \gls{ai}, with the field experiencing several periods of hype and subsequent disappointment, often referred to as ``AI winters''\ \cite{strumke_maskiner_2023}. Importantly, it has always been clear that \gls{ai} has a tendency to be met with great expectations, which often also results in misunderstandings of what \gls{ai} is and what it can do.
+
+\subsection{Exposure to the General Masses}
+One of the most significant milestones in the public perception of \gls{ai} was the development of ELIZA by Joseph Weizenbaum in 1964\ \cite{strumke_maskiner_2023}. ELIZA was a simple program that mimicked a Rogerian psychotherapist, using pattern matching and substitution to create the illusion of understanding. Despite its simple inner workings, ELIZA was able to convince many users that it had genuine understanding and empathy. The phenomenon of users attributing human-like qualities to a machine, is still known as the ``ELIZA effect''\ \cite{strumke_maskiner_2023}.
+
+While ELIZA and other earlier AI systems were primarily used in research and specialized industrial settings, the public release of ChatGPT at the end of 2022 marked a significant shift in the accessibility and visibility of AI technology. This is clear by looking at google search trends for the term ``AI'', shown in \autoref{google_trends}, which shows a significant spike in interest following the release of ChatGPT. This widespread adoption of \gls{llms} introduced new opportunities for interaction with AI systems, but also new challenges in terms of understanding and managing the expectations and perceptions of users.
+
+This raises the question if we have failed in educating lay audiences about the capabilities and limitations of \gls{llms}, and how to best aaddress the misconceptions that may arise from the widespread use of these systems.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/google_ai_search_interest.png}
+    \caption{Google search trends for the term ``AI'' from 2004 to 2026. Data retrieved from Google Trends.}
+    \label{google_trends}
+\end{figure}
 \section{Didactic Models}
 \subsection{The Zone of Proximal Flow}
 
@@ -15,7 +32,7 @@ In a deductive approach to content analysis, the researcher starts with a predef
 \subsection{Inter-Rater Reliability}
 Data is used as trusted ground for making inferences, but in order to make content analysis indisputable, it is important to ensure that the data is generated with the necessary precautions and that there is a common understanding of what the data represents\ \cite{krippendorff_content_2004}. When multiple coders are involved in the coding process, it is important to ensure that they have a common understanding of the coding scheme and that they apply it consistently. This can be assessed through \gls{irr} analysis, which measures the level of agreement between coders. For categorical data, common coefficients for measuring \gls{irr} include Cohen's \(\kappa \) and Krippendorff's \(\alpha \). 
 
-\subsubsection*{Cohen's \(\kappa\)}
+\subsubsection*{Cohen's \(\kappa \)}
 Cohens \(\kappa \) is a coefficient that measures aggreement between two raters who each classify items into mutually exclusive categories. It was first presented by Jacob Cohen in a paper published in 1960\ \cite{cohen_coefficient_1960}. Given a collection of categories, and 2 coders who classify items into these categories, Cohen's \(\kappa \) is calculated as follows:
 \begin{align}
     \kappa = \frac{p_o - p_e}{1 - p_c}
