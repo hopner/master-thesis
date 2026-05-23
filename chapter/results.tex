@@ -216,9 +216,220 @@ p\_id & REPLFEAR & COGPASS & DEPRISK & CREDBIAS \\
 \end{tabular}
 \end{minipage}
 
-\caption{Binary indicator matrices for the four dimensions.}
+\caption{Binary coding matrix for the assessment interviews, by dimension.}
 \label{final_coding_ass}
 \end{sidewaystable}
 
 \section{Follow Up Interviews}
+\begin{figure}
+    \centering
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \scriptsize
+        \resizebox{\linewidth}{!}{
+            \begin{tabular}{|c|c|c|c|c|}
+                \hline
+                \textbf{Category} & \textbf{Agreement} & \textbf{\(\kappa\)} & \textbf{\(\alpha\)} & \textbf{Prevalence} \\
+                \hline
+                ANTHRO & 70\% & 0.211 & 0.240 & 20\% \\
+                \hline
+                DETAUTO & 80\% & 0.412 & 0.406 & 30\% \\
+                \hline
+                OVERACC & 90\% & 0.000 & 0.000 & 10\% \\
+                \hline
+                OVERAUTO & 90\% & 0.737 & 0.747 & 30\% \\
+                \hline
+                REALTIME & 70\% & 0.400 & 0.424 & 50\% \\
+                \hline
+                HALLBLIND & 90\% & 0.000 & 0.000 & 0\% \\
+                \hline
+                CONTEXNEG & 90\% & 0.737 & 0.747 & 30\% \\
+                \hline
+                SEMUNDER & 80\% & -0.111 & -0.056 & 10\% \\
+                \hline
+                SOURCEATTR & 90\% & 0.737 & 0.747 & 20\% \\
+                \hline
+                CONDTREAT & 100\% & 1 & 1 & 20\% \\
+                \hline
+                PLAGBLIND & 100\% & — & — & 0\% \\
+                \hline
+                COPYBLIND & 100\% & — & — & 0\% \\
+                \hline
+                CONDACC & 100\% & 1 & 1 & 40\% \\
+                \hline
+                ENVNEGL & 100\% & — & — & 0\% \\
+                \hline
+                REPLFEAR & 100\% & 1 & 1 & 10\% \\
+                \hline
+                COGPASS & 80\% & 0.545 & 0.548 & 40\% \\
+                \hline
+                DEPRISK & 100\% & 1 & 1 & 10\% \\
+                \hline
+                CREDBIAS & 100\% & — & — & 0\% \\
+                \hline
+            \end{tabular}
+        }
+        \caption{IRR values for Follow Up Interviews}
+        \label{fig:irr_table_fu}
+    \end{subfigure}\hfill
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures/fig_alpha_kappa_fu.png}
+        \caption{Agreement Coefficients for Follow Up Interviews}
+        \label{fig:alpha_kappa_fu}
+    \end{subfigure}
+    \caption{IRR values and kappa/alpha plot for Follow Up Interviews}
+    \label{fig:combined_table_alpha_fu}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{figures/fig_coincidence_fu.png}
+    \caption{Coincidence Matrices for each Category in Follow Up Interviews}
+    \label{fig:coincidence_fu}
+\end{figure}
+
+The final coding matrix from the assessment interviews, shown in \autoref{final_coding_ass}, was used as a baseline for the coders when coding the follow-up interviews. Misconception deemed present in the assessment interview were flipped to absent if the participants made particular statements showing awareness or understanding of the correct concept. If they did express the same opinion as they did in the assessment interview, or if they did not provide sufficient evidence to support awareness or viable understanding, the misconception was retained. \autoref{fig:combined_table_alpha_fu} shows the calculated \gls{irr} coeffiecients and agreement scores for the coders in the follow up interviews. From the assessment interviews, \hyperref[envnegl]{ENVNEGL}, \hyperref[plagblind]{PLAGBLIND}, and \hyperref[copyblind]{COPYBLIND} were already absent, but in the follow-up coding \hyperref[credbias]{CREDBIAS} were found absent as well. It was found perfect agreement in the categories of
+\begin{itemize}
+    \item CONDTREAT
+    \item CONDACC
+    \item REPLFEAR
+\end{itemize}
+and sufficient agreement (both coefficients above 0.6) in the categories of
+\begin{itemize}
+    \item OVERAUTO
+    \item CONTEXNEG
+    \item SOURCEATTR.
+\end{itemize}
+\hyperref[semunder]{SEMUNDER} was the only category with a systematic disagreement (both coefficients below 0). The rest of the categories had a minor agreement (both coefficients between 0 and 0.6). Coincidence matrices for each category are shown in \autoref{fig:coincidence_fu}.
+
+The coders met to discuss the coding of the follow-up interviews and agreed on a final coding matrix to be used for the analysis of the results. The final coding matrix is shown in \autoref{final_coding_fu}.
+
+\begin{sidewaystable}[p]
+\centering
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.1}
+%=========================
+% Top row
+%=========================
+\begin{minipage}[t]{0.36\textwidth}
+\centering
+\small
+\textbf{(a) Dimension 1: FCA}
+
+\vspace{0.4em}
+
+\begin{tabular}{ccccc}
+\hline
+\scriptsize p\_id &
+\scriptsize ANTHRO &
+\scriptsize DETAUTO &
+\scriptsize OVERACC &
+\scriptsize OVERAUTO \\
+\hline
+1  & 1 & 0 & 1 & 1 \\
+2  & 0 & 1 & 0 & 0 \\
+3  & 0 & 1 & 0 & 0 \\
+4  & 0 & 0 & 0 & 0 \\
+5  & 0 & 0 & 0 & 0 \\
+6  & 0 & 0 & 0 & 0 \\
+7  & 0 & 0 & 0 & 0 \\
+8  & 1 & 0 & 0 & 0 \\
+9  & 0 & 0 & 0 & 0 \\
+10 & 0 & 0 & 0 & 1 \\
+\hline
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.60\textwidth}
+\centering
+\scriptsize
+\textbf{(b) Dimension 2: MU}
+
+\vspace{0.4em}
+
+\setlength{\tabcolsep}{3pt}
+
+\begin{tabular}{ccccccc}
+\hline
+p\_id &
+REALTIME &
+HALLBLIND &
+CONTEXNEG &
+SEMUNDER &
+SOURCEATTR &
+CONDTREAT \\
+\hline
+1  & 1 & 0 & 0 & 0 & 1 & 0 \\
+2  & 0 & 0 & 0 & 0 & 0 & 0 \\
+3  & 0 & 0 & 1 & 0 & 1 & 0 \\
+4  & 1 & 0 & 0 & 0 & 0 & 0 \\
+5  & 0 & 0 & 1 & 0 & 1 & 0 \\
+6  & 1 & 0 & 0 & 0 & 0 & 0 \\
+7  & 0 & 0 & 0 & 0 & 0 & 0 \\
+8  & 0 & 0 & 0 & 0 & 0 & 1 \\
+9  & 0 & 0 & 0 & 0 & 0 & 1 \\
+10 & 1 & 0 & 0 & 0 & 0 & 0 \\
+\hline
+\end{tabular}
+\end{minipage}
+
+\vspace{1.5em}
+
+%=========================
+% Bottom row
+%=========================
+\begin{minipage}[t]{0.48\textwidth}
+\centering
+\small
+\textbf{(c) Dimension 3: EAI}
+
+\vspace{0.4em}
+
+\begin{tabular}{ccccc}
+\hline
+p\_id & PLAGBLIND & COPYBLIND & CONDACC & ENVNEGL \\
+\hline
+1  & 0 & 0 & 0 & 0 \\
+2  & 0 & 0 & 0 & 0 \\
+3  & 0 & 0 & 1 & 0 \\
+4  & 0 & 0 & 0 & 0 \\
+5  & 0 & 0 & 1 & 0 \\
+6  & 0 & 0 & 0 & 0 \\
+7  & 0 & 0 & 1 & 0 \\
+8  & 0 & 0 & 0 & 0 \\
+9  & 0 & 0 & 0 & 0 \\
+10 & 0 & 0 & 1 & 0 \\
+\hline
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\centering
+\small
+\textbf{(d) Dimension 4: SCI}
+
+\vspace{0.4em}
+
+\begin{tabular}{ccccc}
+\hline
+p\_id & REPLFEAR & COGPASS & DEPRISK & CREDBIAS \\
+\hline
+1  & 0 & 1 & 1 & 0 \\
+2  & 0 & 0 & 0 & 0 \\
+3  & 0 & 0 & 0 & 0 \\
+4  & 1 & 0 & 0 & 0 \\
+5  & 0 & 1 & 0 & 0 \\
+6  & 0 & 0 & 0 & 0 \\
+7  & 0 & 1 & 0 & 0 \\
+8  & 0 & 1 & 0 & 0 \\
+9  & 0 & 0 & 0 & 0 \\
+10 & 0 & 0 & 0 & 0 \\
+\hline
+\end{tabular}
+\end{minipage}
+
+\caption{Binary coding matrix for the follow-up interviews, by dimension.}
+\label{final_coding_fu}
+\end{sidewaystable}
 \section{Shifts}
