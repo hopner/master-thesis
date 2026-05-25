@@ -1,6 +1,26 @@
 \chapter{Results}
 
 \section{Assessment Interviews}
+
+After the two coders completed their assessments, the codings were gathered for \gls{irr} analysis. \autoref{fig:irr_table_ass} shows the calculated agreement percentage, \gls{irr}-coefficients and prevalence accross each category. \hyperref[envnegl]{ENVNEGL} was not found in any of the transcribt by either coder, so a coefficient could not be calculated. \autoref{fig:alpha_kappa_ass} shows the level of agreement on each category. It was noticed a weak agreement (both coefficients above 0.6) in the categories of
+\begin{itemize}
+    \item \hyperref[cogpass]{COGPASS}
+    \item \hyperref[semunder]{SEMUNDER}
+    \item and \hyperref[overauto]{OVERAUTO},
+\end{itemize}
+a systematic disagreement (both coefficients below 0) in the categories of
+\begin{itemize}
+    \item \hyperref[anthro]{ANTHRO}
+    \item \hyperref[realtime]{REALTIME}
+    \item and \hyperref[contexneg]{CONTEXNEG},
+\end{itemize}
+a minor systematic disagreement (one coefficient below 0) in the categories of
+\begin{itemize}
+    \item \hyperref[semunder]{SEMUNDER}
+    \item and \hyperref[condacc]{CONDACC},
+\end{itemize}
+and a minor agreement (both coefficients between 0 and 0.6) in the rest of the categories.
+
 \begin{figure}
     \centering
     \begin{subfigure}[t]{0.48\textwidth}
@@ -68,25 +88,6 @@
     \caption{Coincidence Matrices for each Category in Assessment Interviews}
     \label{fig:coincidence_ass}
 \end{figure}
-
-After the two coders completed their assessments, the codings were gathered for \gls{irr} analysis. \autoref{fig:irr_table_ass} shows the calculated agreement percentage, \gls{irr}-coefficients and prevalence accross each category. \hyperref[envnegl]{ENVNEGL} was not found in any of the transcribt by either coder, so a coefficient could not be calculated. \autoref{fig:alpha_kappa_ass} shows the level of agreement on each category. It was noticed a weak agreement (both coefficients above 0.6) in the categories of
-\begin{itemize}
-    \item \hyperref[cogpass]{COGPASS}
-    \item \hyperref[semunder]{SEMUNDER}
-    \item \hyperref[overauto]{OVERAUTO},
-\end{itemize}
-a systematic disagreement (both coefficients below 0) in the categories of
-\begin{itemize}
-    \item \hyperref[anthro]{ANTHRO}
-    \item \hyperref[realtime]{REALTIME}
-    \item \hyperref[contexneg]{CONTEXNEG},
-\end{itemize}
-a minor systematic disagreement (one coefficient below 0) in the categories of
-\begin{itemize}
-    \item \hyperref[semunder]{SEMUNDER}
-    \item \hyperref[condacc]{CONDACC},
-\end{itemize}
-and a minor agreement (both coefficients between 0 and 0.6) in the rest of the categories.
 
 The coincidence matrices for each category are shown in \autoref{fig:coincidence_ass}. Here, agreements are shown on the diagonal, while disagreements are shown on the antidiagonal. Notice that all values on the antidiagonal are equal as there are only two coders.
 
@@ -293,7 +294,7 @@ The final coding matrix from the assessment interviews, shown in \autoref{final_
 \begin{itemize}
     \item CONDTREAT
     \item CONDACC
-    \item REPLFEAR
+    \item and REPLFEAR,
 \end{itemize}
 and sufficient agreement (both coefficients above 0.6) in the categories of
 \begin{itemize}
@@ -433,3 +434,42 @@ p\_id & REPLFEAR & COGPASS & DEPRISK & CREDBIAS \\
 \label{final_coding_fu}
 \end{sidewaystable}
 \section{Shifts}
+When the final coding matrix for both the assessment (figure \autoref{final_coding_ass}) and the follow-up interviews (figure \autoref{final_coding_fu}) were compared, several shifts in coding were observed. A detailed heatmap of the shifts is shown in figure \autoref{persistence_hm}, where a misconception is marked as resolved if it was present in the assessment but absent in the follow-up interviews.
+\begin{figure}
+    \centering
+    \caption{Misconception Persistence Heatmap}
+    \label{persistence_hm}
+    \includegraphics[width=0.8\textwidth]{figures/misconception_persistence_heatmap.png}
+\end{figure}
+
+To see any indication of a general effect of the mediation tool, we can look at the quantitative data on misconception persistence, shown in \autoref{quantitative_persistence}. Notably, all participants in the catgories of
+\begin{itemize}
+    \item CREDBIAS
+    \item SEMUNDER
+    \item and HALLBLIND
+\end{itemize}
+were found resolved, most participants in the categories of
+\begin{itemize}
+    \item OVERACC
+    \item and ANTHRO
+\end{itemize}
+were found resolved, and about half of the participants in the categories of
+\begin{itemize}
+    \item REALTIME
+    \item DETAUTO
+    \item and SOURCEATTR
+\end{itemize}
+were found resolved. On the other hand, no participants were found resolved in the categories of
+\begin{itemize}
+    \item CONDTREAT
+    \item CONDACC
+    \item REPLFEAR
+    \item and DEPRISK.
+\end{itemize}
+The rest of the categories had higher persistance than resolution.
+\begin{figure}
+    \centering
+    \caption{Quantitative data on Misconception Persistence}
+    \label{quantitative_persistence}
+    \includegraphics[width=0.8\textwidth]{figures/misconception_persistence_barh.png}
+\end{figure}
