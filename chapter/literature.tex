@@ -79,38 +79,57 @@ Krippendorff's \(\alpha \) is a coefficient that measures the reliability of cod
 \begin{align}
     \alpha = 1 - \frac{D_o}{D_e}
 \end{align}
-where \(D_o\) is the observed disagreement, and \(D_e\) is the expected disagreement by chance. How these are calculated depends on the data. It normally lands on a value between 0 and 1, where a value of 1 indicates perfect agreement, and a value of 0 indicates agreement and disagreement occur by chance. It can however be negative if the observed disagreement is greater than the expected disagreement by chance, which indicates systematic disagreement~\cite{krippendorff_content_2004}.
+where \(D_o\) is the observed disagreement, and \(D_e\) is the expected disagreement by chance. How these are calculated depends on the data. For nominal data, disagreement occurs when coders assign different categories to the same item. For ordinal, interval or ratio data, disagreement is weighted based on the distance between categories. 
+The normally lands on a value between 0 and 1, where a value of 1 indicates perfect agreement, and a value of 0 indicates agreement and disagreement occur by chance. It can however be negative if the observed disagreement is greater than the expected disagreement by chance, which indicates systematic disagreement~\cite{krippendorff_content_2004}.
 
-
-Given 2 coders, a set of categories, and a set of items, you can calculate \(\alpha \) for each category by using the binary data approach~\cite{krippendorff_content_2004} on the presence or absence of each category in the coding. This process starts by tabulating the encodings for each category with one row for each coder, and one column for each item (shown in \autoref{coding_table}). This is called a reliability data matrix.
-
+Given 2 coders, a set of categories, and a set of items to be categorized, you can calculate \(\alpha \) for each category by using the binary data approach~\cite{krippendorff_content_2004} on the presence or absence of each category in the coding. This process starts by tabulating the encodings for each category with one row for each coder, and one column for each item (shown in \autoref{example_coding_table}). This is called a reliability data matrix. As an example, let us say that we have 2 coders, Alice and Bob, who are coding 8 items on the presence of a category, where 1 indicates that the coder coded the category for that item, and 0 indicates that they did not code the category for that item. \autoref{example_coding_table} shows how the reliability data matrix would look like for this example.
 \begin{table}
     \centering
-    \caption{Tabular representation of binary coding}
-    \label{coding_table}
-    \begin{tabular}{l|cccc}
-            & Item 1 & Item 2 & \ldots & Item k \\
+    \caption{Example of binary coding for 2 coders and 8 items}
+    \label{example_coding_table}
+    \begin{tabular}{l|cccccccc}
+            & Item 1 & Item 2 & Item 3 & Item 4 & Item 5 & Item 6 & Item 7 & Item 8 \\
             \hline
-            Coder 1 & $c_{11}$ & $c_{12}$ & \ldots & $c_{1k}$ \\
-            Coder 2 & $c_{21}$ & $c_{22}$ & \ldots & $c_{2k}$
+            Alice & 1 & 0 & 1 & 1 & 1 & 0 & 0 & 0 \\
+            Bob   & 1 & 0 & 0 & 1 & 1 & 0 & 0 & 0
     \end{tabular}
 \end{table}
 
 From these encodings, you can create coincidence matrices for each category as shown in \autoref{coincidence_matrix}. Here, \(o_{00}\) is the number of items where both coders did not code the category, \(o_{11}\) is the number of items where both coders coded the category, and \(o_{01}\) and \(o_{10}\) are the number of items where only one of the coders coded the category.
 
 \begin{table}
-    \centering
-    \caption{Tabular representation of coincidence matrix for a category}
-    \label{coincidence_matrix}
-    \begin{tabular}{l|cc|l}
-            & 0 & 1 & \\
-            \hline
-            0 & $o_{00}$ & $o_{01}$ & $n_0$ \\
-            1 & $o_{10}$ & $o_{11}$ & $n_1$ \\
-            \hline
-            & $n_0$ & $n_1$ & $n$
-    \end{tabular}
+\centering
+\caption{Coincidence matrices in general form and for the example coding in \autoref{example_coding_table}}
+\label{coding_tables_sidebyside}
+\begin{subtable}[t]{0.48\linewidth}
+\centering
+\begin{tabular}{l|cc|l}
+& 0 & 1 & \\
+\hline
+0 & $o_{00}$ & $o_{01}$ & $n_0$ \\
+1 & $o_{10}$ & $o_{11}$ & $n_1$ \\
+\hline
+& $n_0$ & $n_1$ & $n$
+\end{tabular}
+\caption{General form}
+\label{coincidence_matrix}
+\end{subtable}\hfill
+\begin{subtable}[t]{0.48\linewidth}
+\centering
+\begin{tabular}{l|cc|l}
+& 0 & 1 & \\
+\hline
+0 & 8 & 1 & 9 \\
+1 & 1 & 6 & 7 \\
+\hline
+& 9 & 7 & 16
+\end{tabular}
+\caption{Example}
+\label{coincidence_matrix_example}
+\end{subtable}
 \end{table}
+
+For our example, in order to construct the coincidence matrix, we need to take into account all values that the two coders assigned to the items. That is two pairs of values for each item, one for Alice and one for Bob, in total 16 pairs of values for the 8 items. \autoref{example_coding_table} therefore contains eight 0–0 pairs, so \(o_{00} = 8\); one 0–1 pair, so \(o_{01} = 1\); one 1–0 pair, so \(o_{10} = 1\); and six 1–1 pairs, so \(o_{11} = 6\).
 
 For binary nominal data with two coders, disagreement occurs
 when one coder assigns 0 and the other assigns 1. The observed
@@ -124,4 +143,9 @@ can be simplified to:
     \alpha = 1 - (n-1)\frac{o_{01}}{n_0 n_1}
 \end{align}
 
-In this project, the \texttt{krippendorff} library for Python~\cite{castro-2017-fast-krippendorff} was used to calculate \(\alpha \) for each category, which differs slightly from the above procedure. Instead of using the just the raw-count coincidence matrix, it constructs a coincidence matrix that is weighted and normalized per unit.
+In the example with Alice and Bob, we have \(n = 16\), \(n_0 = 9\), and \(n_1 = 7\). Substituting these values into the formula gives:
+\begin{align}
+    \alpha = 1 - (16-1)\frac{1}{9 \cdot 7} = 1 - \frac{15}{63} \approx 0.762
+\end{align}
+
+In this project, the \texttt{krippendorff} library for Python~\cite{castro-2017-fast-krippendorff} was used to calculate \(\alpha \). While the library implements a generalized, vectorized algorithm to optimize computational efficiency, it represents a mathematically equivalent formulation to the manual method described above.
